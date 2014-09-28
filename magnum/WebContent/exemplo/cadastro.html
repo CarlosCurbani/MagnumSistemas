@@ -2,16 +2,19 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="..\estilo\estilo.css"> 
+<title>magnum</title>
 </head>
 <body>
  	<form action="../contato">
-      Nome: <input type="text" name="nome" /><br />
-      E-mail: <input type="text" name="email" /><br />
-      Endereço: <input type="text" name="endereco" /><br />
-      Data Nascimento: <input type="text" name="dataNascimento" /><br />
-      
-      <input type="submit" value="Gravar" />
+ 	<table id="formulario">
+ 		<tr><th>Cadastro</th></tr>
+ 		<tr><td>Nome:</td><td><input type="text" name="nome" /></td></tr>
+        <tr><td>E-mail:</td><td> <input type="text" name="email" /></td></tr>
+        <tr><td>Endereço:</td><td> <input type="text" name="endereco" /></td></tr>
+        <tr><td>Data Nascimento:</td><td> <input type="text" name="dataNascimento" /></td></tr>
+      <tr><td colspan="2" align="right"><input type="submit" value="Gravar" /></td></tr>
+      </table>
     </form>
 </body>
 </html>
