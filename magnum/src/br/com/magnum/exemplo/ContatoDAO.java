@@ -23,9 +23,9 @@ public class ContatoDAO {
 					+ " values (?,?,?,?)";
 			PreparedStatement stmt = con.prepareStatement(sql);
 			// preenche os valores
-			stmt.setString(1, "Caelum");
-			stmt.setString(2, "contato@caelum.com.br");
-			stmt.setString(3, "R. Vergueiro 3185 cj57");
+			stmt.setString(1, contato.getNome());
+			stmt.setString(2, contato.getEmail());
+			stmt.setString(3, contato.getEndereco());
 			stmt.setDate(4, new java.sql.Date(Calendar.getInstance()
 					.getTimeInMillis()));
 			// executa
