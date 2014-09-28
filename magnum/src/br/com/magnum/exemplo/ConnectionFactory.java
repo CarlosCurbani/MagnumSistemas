@@ -7,9 +7,10 @@ import java.sql.SQLException;
 public class ConnectionFactory {
 	public Connection getConnection() {
 		try {
+			Class.forName("com.mysql.jdbc.Driver");  
 		return DriverManager.getConnection(
 		"jdbc:mysql://localhost/magnum", "root", "12345");
-		} catch (SQLException e) {
+		} catch (SQLException | ClassNotFoundException e) {
 		throw new RuntimeException(e);
 		}
 		}
